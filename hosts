@@ -1,2 +1,13 @@
 [all]
-192.168.245.[101:115]  ansible_ssh_user=vagrant
+192.168.245.101  ansible_ssh_user=vagrant
+192.168.245.102  ansible_ssh_user=vagrant
+192.168.245.103  ansible_ssh_user=vagrant
+192.168.245.110  ansible_ssh_user=vagrant
+192.168.245.119  ansible_ssh_user=vagrant
+192.168.245.120  ansible_ssh_user=vagrant
+192.168.245.121  ansible_ssh_user=vagrant
+192.168.245.122  ansible_ssh_user=vagrant
+192.168.245.123  ansible_ssh_user=vagrant
+192.168.245.131  ansible_ssh_user=vagrant
+192.168.245.132  ansible_ssh_user=vagrant
+192.168.245.133  ansible_ssh_user=vagrant

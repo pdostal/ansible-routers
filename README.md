@@ -1,6 +1,1 @@
-# Servers
-
-- **Debian**
-- **CentOS**
-- **FreeBSD**
-
+# Servers ansible playbook

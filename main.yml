@@ -1,6 +1,5 @@
 - name: All
   hosts: all
-  sudo: true
   tasks:
   - name: Ping
     ping:
