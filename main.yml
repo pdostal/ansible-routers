@@ -1,3 +1,6 @@
 - name: All
   hosts: all
-  tasks:
+  sudo: true
+  roles:
+  - { role: packages, tags: packages }
+

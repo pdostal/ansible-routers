@@ -1,0 +1,15 @@
+- name: Set repositories (debian)
+  template: src=debian dest=/etc/apt/sources.list
+  when: ansible_distribution == 'Debian'
+- name: Set repositories (ubuntu)
+  template: src=ubuntu dest=/etc/apt/sources.list
+  when: ansible_distribution == 'Ubuntu'
+
+- name: Update repositories (ubuntu & debian)
+  apt: update_cache=yes
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+- name: Upgrade packages (ubuntu & debian)
+  apt: upgrade=dist
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
