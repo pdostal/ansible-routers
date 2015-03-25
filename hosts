@@ -2,6 +2,7 @@
 server101 ansible_ssh_host=192.168.245.101
 server102 ansible_ssh_host=192.168.245.102
 server103 ansible_ssh_host=192.168.245.103
+server109 ansible_ssh_host=192.168.245.109
 server110 ansible_ssh_host=192.168.245.110
 server119 ansible_ssh_host=192.168.245.119
 server120 ansible_ssh_host=192.168.245.120
