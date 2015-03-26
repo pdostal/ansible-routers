@@ -1,14 +1,14 @@
 [all]
-server101 ansible_ssh_host=192.168.245.101
-server102 ansible_ssh_host=192.168.245.102
-server103 ansible_ssh_host=192.168.245.103
-server109 ansible_ssh_host=192.168.245.109
-server110 ansible_ssh_host=192.168.245.110
-server119 ansible_ssh_host=192.168.245.119
-server120 ansible_ssh_host=192.168.245.120
-server121 ansible_ssh_host=192.168.245.121
-server122 ansible_ssh_host=192.168.245.122
-server123 ansible_ssh_host=192.168.245.123
-server131 ansible_ssh_host=192.168.245.131
-server132 ansible_ssh_host=192.168.245.132
-server133 ansible_ssh_host=192.168.245.133
+server1  ansible_ssh_host=192.168.245.1
+server2  ansible_ssh_host=192.168.245.2
+server3  ansible_ssh_host=192.168.245.3
+server4  ansible_ssh_host=192.168.245.4
+server5  ansible_ssh_host=192.168.245.5
+server6  ansible_ssh_host=192.168.245.6
+server7  ansible_ssh_host=192.168.245.7
+server8  ansible_ssh_host=192.168.245.8
+server9  ansible_ssh_host=192.168.245.9
+server10 ansible_ssh_host=192.168.245.10
+server11 ansible_ssh_host=192.168.245.11
+server12 ansible_ssh_host=192.168.245.12
+server13 ansible_ssh_host=192.168.245.13
