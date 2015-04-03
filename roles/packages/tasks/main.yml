@@ -8,6 +8,12 @@
 - name: Update repositories (ubuntu & debian)
   apt: update_cache=yes
   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+- name: Update repositories (fedora & CentOS)
+  shell: yum update -y
+  when: ansible_distribution == 'Fedora' or ansible_distribution == 'CentOS'
+- name: Update repositories (FreeBSD)
+  shell: pkg update
+  when: ansible_distribution == 'FreeBSD'
 
 - name: Upgrade packages (ubuntu & debian)
   apt: upgrade=dist
