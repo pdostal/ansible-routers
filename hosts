@@ -1,7 +1,7 @@
 [all]
-DNS1       ansible_ssh_host=192.168.245.1
-DNS2       ansible_ssh_host=192.168.245.2
-NTP        ansible_ssh_host=192.168.245.3
+DNS        ansible_ssh_host=192.168.245.1
+DNS1       ansible_ssh_host=192.168.245.2
+DNS2       ansible_ssh_host=192.168.245.3
 BALANCER   ansible_ssh_host=192.168.245.10
 STORAGE    ansible_ssh_host=192.168.245.11
 HTTP1      ansible_ssh_host=192.168.245.21
