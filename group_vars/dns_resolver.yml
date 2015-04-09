@@ -6,7 +6,7 @@ forward_addr:
 - 2001:1488:800:400::130
 - 2001:678:1::206
 
-arpa_zone: 192.168.245.in-addr.arpa.
+arpa_zone: 245.168.192.in-addr.arpa.
 
 stub_addr:
 - 192.168.245.2
