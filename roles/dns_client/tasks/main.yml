@@ -1,0 +1,2 @@
+- name: Set resolvers
+  template: src=resolv.conf dest=/etc/resolv.conf
