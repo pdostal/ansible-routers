@@ -1,0 +1,7 @@
+- name: Set (Linux)
+  hostname: name={{ inventory_hostname | lower }}
+  when: ansible_system == 'Linux'
+- name: Set (FreeBSD)
+  lineinfile: dest=/etc/rc.conf regexp=^hostname=
+    line='hostname={{ inventory_hostname | lower }}'
+  when: ansible_system == 'FreeBSD'
