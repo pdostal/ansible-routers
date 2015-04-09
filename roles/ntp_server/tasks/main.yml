@@ -1,0 +1,6 @@
+- name: Place ntp.conf
+  template: src=ntp.conf dest=/etc/ntp.conf
+  notify: Restart service
+- name: Enable service
+  lineinfile: dest=/etc/rc.conf regexp=^ntpd_enable= line=ntpd_enable=YES
+  notify: Restart service
