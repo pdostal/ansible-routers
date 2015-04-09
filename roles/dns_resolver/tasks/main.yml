@@ -1,0 +1,9 @@
+- name: Install Unbound
+  pkgng: name=unbound state=present
+  notify: Restart service
+- name: Place unbound.conf
+  template: src=unbound.conf dest=/usr/local/etc/unbound/unbound.conf
+  notify: Restart service
+- name: Enable service
+  lineinfile: dest=/etc/rc.conf regexp=^unbound_enable= line=unbound_enable=YES
+  notify: Restart service

@@ -4,3 +4,4 @@
   roles:
   - { role: PACKAGES, tags: packages }
   - { role: NETWORK, tags: network }
+  - { role: DNS_RESOLVER, tags: dns_resolver, when: inventory_hostname in groups.dns_resolver }
