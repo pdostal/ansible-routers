@@ -1,0 +1,18 @@
+- name: Install daemon (Debian like)
+  apt: name=ntp state=latest force=yes
+  when: ansible_os_family == 'Debian'
+- name: Install daemon (RedHat like)
+  yum: name=ntp state=latest
+  when: ansible_os_family == 'RedHat'
+- name: Install daemon (FreeBSD like)
+  pkgng: name=ntp state=present
+  when: ansible_os_family == 'FreeBSD'
+
+- name: Place ntp.conf
+  template: src=ntp.conf dest=/etc/ntp.conf
+  notify: Restart service
+  
+- name: Enable service (FreeBSD like)
+  lineinfile: dest=/etc/rc.conf regexp=^ntpd_enable= line=ntpd_enable=YES
+  when: ansible_os_family == 'FreeBSD'
+  notify: Restart service

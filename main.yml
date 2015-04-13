@@ -5,5 +5,6 @@
   - { role: PACKAGES, tags: packages }
   - { role: HOSTNAME, tags: hostname }
   - { role: DNS_RESOLVER, tags: dns_resolver, when: inventory_hostname in groups.dns_resolver }
-  - { role: NTP_SERVER, tags: ntp_server, when: inventory_hostname in groups.ntp_server }
   - { role: DNS_CLIENT, tags: dns_client }
+  - { role: NTP_SERVER, tags: ntp_server, when: inventory_hostname in groups.ntp_server }
+  - { role: NTP_CLIENT, tags: ntp_client, when: inventory_hostname not in groups.ntp_server }
